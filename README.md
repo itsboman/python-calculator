@@ -1,1 +1,19 @@
 # python-calculator
+# Simple calculator in Python
+# Get user input
+num1 = float(input("Enter first number: "))
+op = input("Enter operator (+, -, *, /): ")
+num2 = float(input("Enter second number: "))
+
+# Perform calculation based on operator
+if op == "+":
+    print("Result:", num1 + num2)
+elif op == "-":
+    print("Result:", num1 - num2)
+elif op == "*":
+    print("Result:", num1 * num2)
+elif op == "/":
+    if num2 != 0:
+        print("Result:", num1 / num2)
+    else:
+        print("Cannot divide by zero!")
